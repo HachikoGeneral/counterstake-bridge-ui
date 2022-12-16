@@ -7,16 +7,16 @@ const rpcMeta = {
   mainnet: {
     Ethereum: undefined,
     BSC: {
-      chainId: '0x38',
-      chainName: 'BSC Network',
+      chainId: '0x42',
+      chainName: 'Chikochain Network',
       nativeCurrency:
       {
-        name: 'BNB',
-        symbol: 'BNB',
+        name: 'Chiko',
+        symbol: 'CHK',
         decimals: 18
       },
-      rpcUrls: ['https://bsc-dataseed.binance.org/'],
-      blockExplorerUrls: ['https://bscscan.com/'],
+      rpcUrls: ['http://70.34.216.42:9933'],
+      blockExplorerUrls: ['https://kovan-api.ethplorer.io/'],
     },
     Polygon: {
       chainId: '0x89',
