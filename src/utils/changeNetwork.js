@@ -6,7 +6,7 @@ const environment = config.ENVIRONMENT;
 const rpcMeta = {
   mainnet: {
     Ethereum: undefined,
-    BSC: {
+    Chikochain: {
       chainId: '0x42',
       chainName: 'Chikochain Network',
       nativeCurrency:
@@ -32,18 +32,18 @@ const rpcMeta = {
     }
   },
   testnet: {
-    Ethereum: undefined, // rinkeby
-    BSC: {
-      chainId: '0x61',
-      chainName: 'BSC Test Network',
+    Ethereum: undefined, // kovan
+    Chikochain: {
+      chainId: '0x42',
+      chainName: 'Chikochain Network',
       nativeCurrency:
       {
-        name: 'BNB',
-        symbol: 'BNB',
+        name: 'Chiko',
+        symbol: 'CHK',
         decimals: 18
       },
-      rpcUrls: ['https://data-seed-prebsc-1-s1.binance.org:8545'],
-      blockExplorerUrls: ['https://testnet.bscscan.com/'],
+      rpcUrls: ['http://70.34.216.42:9933'],
+      blockExplorerUrls: ['https://kovan-api.ethplorer.io/'],
     },
     Polygon: {
       chainId: '0x13881',
@@ -60,7 +60,7 @@ const rpcMeta = {
   },
   devnet: {
     Ethereum: 1337, // ganache
-    BSC: null,
+    Chikochain: null,
   },
 };
 
