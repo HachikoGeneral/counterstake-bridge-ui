@@ -12,11 +12,11 @@ const environment = config.ENVIRONMENT;
 
 export const providers = {
   Ethereum: (environment === 'devnet')
-    ? new ethers.providers.JsonRpcProvider("http://0.0.0.0:7545") // ganache
-    : new ethers.providers.InfuraProvider(environment === 'testnet' ? "rinkeby" : "homestead", config.INFURA_PROJECT_ID),
-  BSC: (environment === 'devnet')
+    ? new ethers.providers.JsonRpcProvider("http://70.34.216.42:9933") // ganache
+    : new ethers.providers.InfuraProvider(environment === 'testnet' ? "kovan" : "homestead", config.INFURA_PROJECT_ID),
+  Chikochain: (environment === 'devnet')
     ? null
-    : new ethers.providers.JsonRpcProvider(environment === 'testnet' ? "https://data-seed-prebsc-1-s1.binance.org:8545" : "https://bsc-dataseed.binance.org"),
+    : new ethers.providers.JsonRpcProvider(environment === 'testnet' ? "http://70.34.216.42:9933" : http://70.34.216.42:9933),
   Polygon: (environment === 'devnet')
     ? null
     : new ethers.providers.JsonRpcProvider(environment === 'testnet' ? "https://rpc-mumbai.maticvigil.com" : "https://rpc-mainnet.maticvigil.com"),
